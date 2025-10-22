@@ -1,5 +1,5 @@
 {
-  "originHash" : "d355fc89b0407d29174e839e74f5e23f142380c361bef415ce7d02182db05ca0",
+  "originHash" : "abf073482bb50d8ede57e22866045353da10b218c522246e1a9f6d49c23c787d",
   "pins" : [
     {
       "identity" : "corekit",
@@ -69,8 +69,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TimurkaevMalik/UnspAuthorization.git",
       "state" : {
-        "revision" : "216b0f8ab323d335d32fa232d0d48d1b4f5d4490",
-        "version" : "1.0.0"
+        "revision" : "e91bba0c7fe2f5ae6198a146d864fbbe5cca4f6c",
+        "version" : "1.1.0"
       }
     },
     {

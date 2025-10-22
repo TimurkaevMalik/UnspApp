@@ -11,7 +11,7 @@ public enum SPMDependency {
     static let unspAuthorization = PackageModel(
         name: "UnspAuthorization",
         url: "https://github.com/TimurkaevMalik/UnspAuthorization.git",
-        requirement: .version(.init(1, 0, 0))
+        requirement: .version(.init(1, 1, 0))
     )
     
     static let unspMainFlow = PackageModel(
