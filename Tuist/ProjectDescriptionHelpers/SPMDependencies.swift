@@ -20,10 +20,10 @@ public enum SPMDependency {
         requirement: .version(.init(1, 0, 0))
     )
     
-    static let snapKitWrapper = PackageModel(
-        name: "SnapKitWrapper",
-        url: "https://github.com/TimurkaevMalik/SnapKitWrapper.git",
-        requirement: .version(.init(5, 8, 0))
+    static let snapKit = PackageModel(
+        name: "SnapKit",
+        url: "https://github.com/SnapKit/SnapKit.git",
+        requirement: .version(.init(5, 7, 0))
     )
     
     static let loggingKit = PackageModel(

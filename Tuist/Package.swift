@@ -6,15 +6,15 @@ import struct ProjectDescription.PackageSettings
 
 let packageSettings = PackageSettings(
     productTypes: [
-        SPMDependency.unspAuthorization.name: .staticFramework,
-        SPMDependency.unspMainFlow.name: .staticFramework,
+        SPMDependency.unspAuthorization.name: .staticLibrary,
+        SPMDependency.unspMainFlow.name: .staticLibrary,
         
-        SPMDependency.helpersSharedUnsp.name: .framework,
-        SPMDependency.snapKitWrapper.name: .framework,
-        SPMDependency.coreKit.name: .framework,
-        SPMDependency.loggingKit.name: .framework,
-        SPMDependency.keychainStorageKit.name: .framework,
-        SPMDependency.networkKit.name: .framework,
+        SPMDependency.helpersSharedUnsp.name: .staticLibrary,
+        SPMDependency.snapKit.name: .staticLibrary,
+        SPMDependency.coreKit.name: .staticLibrary,
+        SPMDependency.loggingKit.name: .staticLibrary,
+        SPMDependency.keychainStorageKit.name: .staticLibrary,
+        SPMDependency.networkKit.name: .staticLibrary,
     ]
 )
 #endif
@@ -27,7 +27,7 @@ let package = Package(
         .make(from: SPMDependency.unspMainFlow),
         
         .make(from: SPMDependency.helpersSharedUnsp),
-        .make(from: SPMDependency.snapKitWrapper),
+        .make(from: SPMDependency.snapKit),
         .make(from: SPMDependency.coreKit),
         .make(from: SPMDependency.loggingKit),
         .make(from: SPMDependency.keychainStorageKit),
@@ -49,10 +49,10 @@ fileprivate enum SPMDependency {
         requirement: .version(.init(1, 0, 0))
     )
     
-    static let snapKitWrapper = PackageModel(
-        name: "SnapKitWrapper",
-        url: "https://github.com/TimurkaevMalik/SnapKitWrapper.git",
-        requirement: .version(.init(5, 8, 0))
+    static let snapKit = PackageModel(
+        name: "SnapKit",
+        url: "https://github.com/SnapKit/SnapKit.git",
+        requirement: .version(.init(5, 7, 0))
     )
     
     static let loggingKit = PackageModel(
@@ -64,13 +64,13 @@ fileprivate enum SPMDependency {
     static let keychainStorageKit = PackageModel(
         name: "KeychainStorageKit",
         url: "https://github.com/TimurkaevMalik/KeychainStorageKit.git",
-        requirement: .version(.init(1, 8, 0))
+        requirement: .version(.init(1, 9, 0))
     )
     
     static let coreKit = PackageModel(
         name: "CoreKit",
         url: "https://github.com/TimurkaevMalik/CoreKit.git",
-        requirement: .version(.init(2, 14, 0))
+        requirement: .version(.init(2, 15, 0))
     )
     
     static let networkKit = PackageModel(
