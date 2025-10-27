@@ -3,18 +3,19 @@ import PackageDescription
 
 #if TUIST
 import struct ProjectDescription.PackageSettings
+import ProjectDescriptionHelpers
 
 let packageSettings = PackageSettings(
     productTypes: [
-        SPMDependency.unspAuthorization.name: .staticLibrary,
-        SPMDependency.unspMainFlow.name: .staticLibrary,
+        SPMDependency.unspAuthorization.name: resolvedFramework(),
+        SPMDependency.unspMainFlow.name: resolvedFramework(),
         
-        SPMDependency.helpersSharedUnsp.name: .staticLibrary,
-        SPMDependency.snapKit.name: .staticLibrary,
-        SPMDependency.coreKit.name: .staticLibrary,
-        SPMDependency.loggingKit.name: .staticLibrary,
-        SPMDependency.keychainStorageKit.name: .staticLibrary,
-        SPMDependency.networkKit.name: .staticLibrary,
+        SPMDependency.helpersSharedUnsp.name: resolvedFramework(),
+        SPMDependency.snapKit.name: resolvedFramework(),
+        SPMDependency.coreKit.name: resolvedFramework(),
+        SPMDependency.loggingKit.name: resolvedFramework(),
+        SPMDependency.keychainStorageKit.name: resolvedFramework(),
+        SPMDependency.networkKit.name: resolvedFramework(),
     ]
 )
 #endif
