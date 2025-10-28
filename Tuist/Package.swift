@@ -10,12 +10,12 @@ let packageSettings = PackageSettings(
         SPMDependency.unspAuthorization.name: resolvedFramework(),
         SPMDependency.unspMainFlow.name: resolvedFramework(),
         
-        SPMDependency.helpersSharedUnsp.name: resolvedFramework(),
-        SPMDependency.snapKit.name: resolvedFramework(),
-        SPMDependency.coreKit.name: resolvedFramework(),
-        SPMDependency.loggingKit.name: resolvedFramework(),
-        SPMDependency.keychainStorageKit.name: resolvedFramework(),
-        SPMDependency.networkKit.name: resolvedFramework(),
+//        SPMDependency.helpersSharedUnsp.name: resolvedFramework(),
+//        SPMDependency.snapKitWrapper.name: resolvedFramework(),
+//        SPMDependency.coreKit.name: resolvedFramework(),
+//        SPMDependency.loggingKit.name: resolvedFramework(),
+//        SPMDependency.keychainStorageKit.name: resolvedFramework(),
+//        SPMDependency.networkKit.name: resolvedFramework(),
     ]
 )
 #endif
@@ -24,15 +24,15 @@ let packageSettings = PackageSettings(
 let package = Package(
     name: "UnspApp",
     dependencies: [
+//        .make(from: SPMDependency.helpersSharedUnsp),
+//        .make(from: SPMDependency.snapKitWrapper),
+//        .make(from: SPMDependency.coreKit),
+//        .make(from: SPMDependency.loggingKit),
+//        .make(from: SPMDependency.keychainStorageKit),
+//        .make(from: SPMDependency.networkKit),
+        
         .make(from: SPMDependency.unspAuthorization),
         .make(from: SPMDependency.unspMainFlow),
-        
-        .make(from: SPMDependency.helpersSharedUnsp),
-        .make(from: SPMDependency.snapKit),
-        .make(from: SPMDependency.coreKit),
-        .make(from: SPMDependency.loggingKit),
-        .make(from: SPMDependency.keychainStorageKit),
-        .make(from: SPMDependency.networkKit)
     ]
 )
 
@@ -41,19 +41,19 @@ fileprivate enum SPMDependency {
     static let unspAuthorization = PackageModel(
         name: "UnspAuthorization",
         url: "https://github.com/TimurkaevMalik/UnspAuthorization.git",
-        requirement: .version(.init(1, 1, 0))
+        requirement: .version(.init(1, 5, 0))
     )
     
     static let unspMainFlow = PackageModel(
         name: "UnspMainFlow",
         url: "https://github.com/TimurkaevMalik/UnspMainFlow.git",
-        requirement: .version(.init(1, 0, 0))
+        requirement: .version(.init(1, 5, 0))
     )
     
-    static let snapKit = PackageModel(
-        name: "SnapKit",
-        url: "https://github.com/SnapKit/SnapKit.git",
-        requirement: .version(.init(5, 7, 0))
+    static let snapKitWrapper = PackageModel(
+        name: "SnapKitWrapper",
+        url: "https://github.com/TimurkaevMalik/SnapKitWrapper.git",
+        requirement: .version(.init(5, 8, 0))
     )
     
     static let loggingKit = PackageModel(
@@ -83,7 +83,7 @@ fileprivate enum SPMDependency {
     static let helpersSharedUnsp = PackageModel(
         name: "HelpersSharedUnsp",
         url: "https://github.com/TimurkaevMalik/HelpersSharedUnsp.git",
-        requirement: .branch("main")
+        requirement: .version(.init(1, 1, 0))
     )
 }
 

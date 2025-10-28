@@ -1,5 +1,5 @@
 {
-  "originHash" : "94111fb657770ab1e6f87dc4f5a3037701ae0661661923418cf5abad1c8a196f",
+  "originHash" : "c8547ddb30ee25bc259128e74ff320cd209340a160abfb74df416b8bf26e76fa",
   "pins" : [
     {
       "identity" : "corekit",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TimurkaevMalik/HelpersSharedUnsp.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "2c885a374d2c9b4053539ce1c93002d6f6b9a9d3"
+        "revision" : "6525b2bc00870aa562cd638bf5e0cafddaebfccc",
+        "version" : "1.1.0"
       }
     },
     {
@@ -56,12 +56,21 @@
       }
     },
     {
+      "identity" : "snapkitwrapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TimurkaevMalik/SnapKitWrapper.git",
+      "state" : {
+        "revision" : "842587aa99882126eed2f36c1628a66d5be06542",
+        "version" : "5.8.0"
+      }
+    },
+    {
       "identity" : "unspauthorization",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TimurkaevMalik/UnspAuthorization.git",
       "state" : {
-        "revision" : "e91bba0c7fe2f5ae6198a146d864fbbe5cca4f6c",
-        "version" : "1.1.0"
+        "revision" : "066e723e50685d507e1af272ce47a9e4826218c8",
+        "version" : "1.5.0"
       }
     },
     {
@@ -69,8 +78,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TimurkaevMalik/UnspMainFlow.git",
       "state" : {
-        "revision" : "34aeaf3875885d2eda123376deabae9f017fb60a",
-        "version" : "1.0.0"
+        "revision" : "69497fe5173f665fc70e63c4fcd9dc8548be8b4c",
+        "version" : "1.5.0"
       }
     },
     {
