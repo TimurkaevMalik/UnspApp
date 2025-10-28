@@ -10,12 +10,12 @@ let packageSettings = PackageSettings(
         SPMDependency.unspAuthorization.name: resolvedFramework(),
         SPMDependency.unspMainFlow.name: resolvedFramework(),
         
-//        SPMDependency.helpersSharedUnsp.name: resolvedFramework(),
-//        SPMDependency.snapKitWrapper.name: resolvedFramework(),
-//        SPMDependency.coreKit.name: resolvedFramework(),
-//        SPMDependency.loggingKit.name: resolvedFramework(),
-//        SPMDependency.keychainStorageKit.name: resolvedFramework(),
-//        SPMDependency.networkKit.name: resolvedFramework(),
+        SPMDependency.helpersSharedUnsp.name: resolvedFramework(),
+        SPMDependency.snapKitWrapper.name: resolvedFramework(),
+        SPMDependency.coreKit.name: resolvedFramework(),
+        SPMDependency.loggingKit.name: resolvedFramework(),
+        SPMDependency.keychainStorageKit.name: resolvedFramework(),
+        SPMDependency.networkKit.name: resolvedFramework(),
     ]
 )
 #endif
@@ -24,12 +24,12 @@ let packageSettings = PackageSettings(
 let package = Package(
     name: "UnspApp",
     dependencies: [
-//        .make(from: SPMDependency.helpersSharedUnsp),
-//        .make(from: SPMDependency.snapKitWrapper),
-//        .make(from: SPMDependency.coreKit),
-//        .make(from: SPMDependency.loggingKit),
-//        .make(from: SPMDependency.keychainStorageKit),
-//        .make(from: SPMDependency.networkKit),
+        .make(from: SPMDependency.helpersSharedUnsp),
+        .make(from: SPMDependency.snapKitWrapper),
+        .make(from: SPMDependency.coreKit),
+        .make(from: SPMDependency.loggingKit),
+        .make(from: SPMDependency.keychainStorageKit),
+        .make(from: SPMDependency.networkKit),
         
         .make(from: SPMDependency.unspAuthorization),
         .make(from: SPMDependency.unspMainFlow),

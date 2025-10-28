@@ -5,8 +5,8 @@ let project = Project(
     name: ProjectConstants.appName,
     settings: .settings(base: BuildFlags.base),
     targets: [
-//        Targets.authTarget,
-//        Targets.mainFlowTarget,
+        Targets.authTarget,
+        Targets.mainFlowTarget,
         Targets.appTarget
     ]
 )
